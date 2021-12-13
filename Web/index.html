@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/event-source-polyfill/src/eventsource.min.js"></script>
+        <script src="node_modules/@divine/amd-loader/amd-loader.min.js"></script>
+        <script src="build/@onslip/onslip-360-web-api.es3.umd.js"></script>
+        <script src="build/index.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', require('src/web-demo').main, false);
+        </script>
+    </head>
+
+    <body>
+        <h1>Me</h1>
+        <div id='me'></div>
+
+        <h1>All product groups</h1>
+        <div id='pg'></div>
+
+        <h1>Products costing more than 20 kr and recently updated</h1>
+        <div id='products'></div>
+
+        <h1>Logo</h1>
+        Välj fil <input type='file' accept='image/png, image/jpeg' id='file'/> att <button id='upload'>ladda upp</button>.
+        <br><br>
+        <img id='logo'>
+
+        <h1>Product and product group updates</h1>
+        <div id='events'></div>
+
+    </body>
+</html>

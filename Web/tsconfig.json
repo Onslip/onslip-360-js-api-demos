@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "amd",
+    "target": "es3",
+    "outFile": "build/index.js",
+  },
+  "include": [
+    "src/**/*.ts",
+  ],
+}

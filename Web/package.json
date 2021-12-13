@@ -1,0 +1,17 @@
+{
+  "name": "onslip-360-web-demo",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "browser": "build/index.js",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "typescript": "~4.5.2"
+  },
+  "dependencies": {
+    "@divine/amd-loader": "^1.1.0",
+    "@onslip/onslip-360-web-api": "^1.24.0-2107071611",
+    "core-js": "^2.6.12",
+    "event-source-polyfill": "^1.0.25"
+  }
+}
