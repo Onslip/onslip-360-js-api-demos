@@ -4,14 +4,14 @@
   "license": "Apache-2.0",
   "private": true,
   "browser": "build/index.js",
-  "devDependencies": {
-    "browserify": "^17.0.0",
-    "typescript": "~5.4.5"
-  },
   "dependencies": {
     "@divine/amd-loader": "^1.1.0",
     "@onslip/onslip-360-web-api": "~1.33.5",
     "core-js-bundle": "^3.37.1",
     "event-source-polyfill": "^1.0.31"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "typescript": "~5.4.5"
   }
 }

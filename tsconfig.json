@@ -2,6 +2,7 @@
     "include": [],
     "references": [
         { "path": "NodeJS" },
+        { "path": "OAuth" },
         { "path": "Web" },
     ]
 }

@@ -1,4 +1,4 @@
-MODULES		= Web NodeJS
+MODULES		= NodeJS Web Web-OAuth
 
 help:
 	@awk -F ':.*## ' '/^[^\t]+:.*## / { printf "\033[1m%-16s\033[0m %s\n", $$1, $$2 }' $(MAKEFILE_LIST)
