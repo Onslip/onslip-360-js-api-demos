@@ -2,7 +2,7 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "module": "amd",
-    "target": "es3",
+    "target": "es5",
     "outFile": "build/index.js",
   },
   "include": [

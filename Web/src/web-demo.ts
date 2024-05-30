@@ -32,11 +32,11 @@ export async function main() {
                 if (file.files && file.files[0]) {
                     console.log(`Uploading ${file.files[0]}`);
                     await api.uploadLocationCustomerScreenLogo(location.id, file.files[0] as unknown as API.DataStream);
-                    await displayTakeOutLogo(api, location.id);
+                    await displayCustomerScreenLogo(api, location.id);
                 }
             }, false);
 
-            await displayTakeOutLogo(api, location.id);
+            await displayCustomerScreenLogo(api, location.id);
         }
 
         // Now stream all product and product-group modifications
@@ -47,14 +47,14 @@ export async function main() {
         for await (const event of api.signal(cancel.signal).openEventStream(stream.id)) {
             document.getElementById('events')!.innerText += JSON.stringify(event) + '\n';
         }
-        document.getElementById('events')!.innerText += 'All done';
+        document.getElementById('events')!.innerText += 'All done; stream closed';
     }
     catch (err) {
         alert(`Error: ${err}`);
     }
 }
 
-async function displayTakeOutLogo(api: API, location: number) {
+async function displayCustomerScreenLogo(api: API, location: number) {
     const logo = await api.downloadLocationCustomerScreenLogo(location);
 
     console.log(`Downloaded file '${logo.name ||''}' (${logo.type}, ${logo.size} bytes long)`)

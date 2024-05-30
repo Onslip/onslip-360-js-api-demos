@@ -32,13 +32,13 @@ async function main() {
         // Now stream all product and product-group modifications (for one minute)
         const stream = await api.addEventStream({ state: 'pending', queries: [ { resource: 'products', query: '' }, { resource: 'product-groups', query: '' } ] });
         const cancel = new AbortController();
-        setTimeout(() => cancel.abort, 60_000);
+        setTimeout(() => cancel.abort(), 60_000);
 
         console.log('Product and product group updates:');
         for await (const event of api.signal(cancel.signal).openEventStream(stream.id)) {
             console.log(event);
         }
-        console.log('All done');
+        console.log('All done; stream closed');
     }
     catch (err) {
         console.error(`Error: ${err}`);
