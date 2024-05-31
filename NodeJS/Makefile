@@ -15,4 +15,4 @@ clean:										## Clean all build artifacts (but not dependencies)
 distclean:	clean								## Like clean, but also remove all dependencies
 	rm -rf node_modules
 
-.PHONY:		all prepare build clean distclean
+.PHONY:		help all prepare build clean distclean

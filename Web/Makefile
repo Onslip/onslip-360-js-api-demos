@@ -18,7 +18,7 @@ clean:										## Clean all build artifacts (but not dependencies)
 distclean:	clean								## Like clean, but also remove all dependencies
 	rm -rf node_modules
 
-.PHONY:		all prepare build build-es5-sdk clean distclean
+.PHONY:		help all prepare build build-es5-sdk clean distclean
 
 define downcompile-module
 	mkdir -p $(dir build/$1)
