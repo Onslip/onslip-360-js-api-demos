@@ -43,7 +43,7 @@ export class OAuthDemo extends LitElement {
             ` : html`
                 <h2>API Demos</h2>
 
-                <button @click=${this.unauthorize}>Unauthrorize</button>
+                <button @click=${this.unauthorize}>Unauthorize</button>
                 <button @click=${this.clientInfo}>Client Info</button>
                 <button @click=${this.getLocation}>Location Info</button>
 
