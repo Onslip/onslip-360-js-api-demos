@@ -39,7 +39,7 @@ export class OAuthDemo extends LitElement {
                 <input id=server type=text size="40" placeholder="Server URL" value=${this.server} @input=${this.updateServer} />
                 <input id=client type=text size="10" placeholder="Client ID"  value=${this.client} @change=${this.updateClient} />
 
-                <button ?disabled=${!this.server || !this.click} @click=${this.authorize}>Authorize</button>
+                <button ?disabled=${!this.server || !this.client} @click=${this.authorize}>Authorize</button>
             ` : html`
                 <h2>API Demos</h2>
 
