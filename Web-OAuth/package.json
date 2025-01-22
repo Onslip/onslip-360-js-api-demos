@@ -6,7 +6,7 @@
   "dependencies": {
     "lit": "^3.1.3",
     "typescript": "~5.4.5",
-    "vite": "^5.2.14"
+    "vite": "^5.4.12"
   },
   "devDependencies": {
     "@onslip/onslip-360-api": "~1.33.5",
