@@ -6,7 +6,7 @@
   "main": "build/src/node-demo.js",
   "dependencies": {
     "@divine/sysconsole": "^2.1.1",
-    "@onslip/onslip-360-node-api": "~1.33.5"
+    "@onslip/onslip-360-node-api": "~1.35.6"
   },
   "devDependencies": {
     "@types/node": "^12",
